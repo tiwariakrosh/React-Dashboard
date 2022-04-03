@@ -10,12 +10,14 @@ export default function Sidebar() {
                     <h3 className='sidebarTitle'>Dashboard</h3>
                     <ul className="sidebarList">
                         <li className="sidebarItem active">
+                        <a href="/">
                             <FontAwesomeIcon className='sidebar_icon' icon="fa-solid fa-house" />
-                          <a href="/">Home</a>
+                         Home</a>
                         </li>
                         <li className="sidebarItem">
+                        <a href="/users">
                             <FontAwesomeIcon className='sidebar_icon' icon="fa-solid fa-list-alt" />
-                          <a href="/users">User List</a>
+                          User List</a>
                         </li>
                         <li className="sidebarItem">
                         <FontAwesomeIcon className='sidebar_icon' icon="fa-solid fa-arrow-trend-up" />
