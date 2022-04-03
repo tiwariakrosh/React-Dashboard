@@ -4,8 +4,8 @@ import Subscription from '../subscriptions.json';
 export default function UserList() {
   return (
     <div className='UserList'>
-          <div className='Subscriber'>
-      <h3 className='SubscriberTitle'>Latest Transiction</h3>
+      <div className='Subscriber'>
+      <h3 className='SubscriberTitle'>Users List</h3>
       <table className='SubscriberTable'>
         <thead>
           <tr className='SubscriberTr'>
@@ -28,7 +28,6 @@ export default function UserList() {
           )
         })}
       </table>
-   
     </div>
     </div>
   )

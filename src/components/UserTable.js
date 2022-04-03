@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Users from "../users.json";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function UserTable() {
   const [searchTerm, setsearchTterm] = useState("");
@@ -17,32 +18,42 @@ export default function UserTable() {
         a[col].toLowerCase() < b[col].toLowerCase() ? 1 : -1);
       setdata(sorted);
       setorder("ASC");
+      <FontAwesomeIcon className='icon' icon="fa-solid fa-bell" />
     }
   }
 
 
   return (
     <div className='User_Table'>
+      <h2 className='subscriptionTitle'>Subscription Table</h2>
+      <div className="searchBox">
+      <FontAwesomeIcon className="lens" icon="fa-solid fa-magnifying-glass" />
       <input type="text"
         placeholder="Search..."
         className="search"
         onChange={(e) => setsearchTterm(e.target.value)} />
-
+      </div>
       <table className='UserTable'>
         <thead>
           <tr className='UserTr'>
             <th className="Userth">ID</th>
-            <th onClick={() => sorting("first_name")} className="Userth">First Name</th>
+            <th onClick={() => sorting("first_name")} className="Userth"><span>First Name 
+                <FontAwesomeIcon className='icon' icon="fa-solid fa-arrow-up" /></span>
+            </th>
             <th className="Userth">Middle Name</th>
-            <th onClick={() => sorting("last_name")} className="Userth">Last Name </th>
+            <th onClick={() => sorting("last_name")} className="Userth">
+              <span>Last Name <FontAwesomeIcon className='icon' icon="fa-solid fa-arrow-up" /></span></th>
             <th onClick={() => sorting("username")} className="Userth">Username</th>
-            <th onClick={() => sorting("email")} className="Userth">Email</th>
+            <th onClick={() => sorting("email")} className="Userth"><span>Email
+                <FontAwesomeIcon className='icon' icon="fa-solid fa-arrow-up" /></span></th>
             <th className="Userth">Password</th>
             <th className="Userth">Active</th>
-            <th onClick={() => sorting("address")} className="Userth">Address</th>
-            <th onClick={() => sorting("country")} className="Userth">Country</th>
-            <th onClick={() => sorting("join_date")} className='Userth'>Join Date</th>
-            <th className='Userth'>View Subscription</th>
+            <th onClick={() => sorting("address")} className="Userth"><span>Address
+                <FontAwesomeIcon className='icon' icon="fa-solid fa-arrow-up" /></span></th>
+            <th onClick={() => sorting("country")} className="Userth"><span>Country 
+                <FontAwesomeIcon className='icon' icon="fa-solid fa-arrow-up" /></span></th>
+            <th onClick={() => sorting("join_date")} className='Userth'><span>Join Date
+                <FontAwesomeIcon className='icon' icon="fa-solid fa-arrow-up" /></span></th>
           </tr>
         </thead>
         {data.filter((val) => {

@@ -5,34 +5,27 @@ export default function Feature() {
   return (
     <div className='featured'>
         <div className="featured_item">
-            <span className="featured_title">Salse</span>
+            <span className="featured_title">Total User</span>
             <div className="FeaturedMoneyContainer">
-                <span className="featureMoney">Rs. 12500</span>
-                <span className="featureMoneyRate">-120
-                <FontAwesomeIcon className='featured_icon' icon="fa-solid fa-arrow-up" />
-                </span>
+                <span className="featureMoney">12460</span>
+                <FontAwesomeIcon className='featured_icon' icon="fa-solid fa-users" />
             </div>
-            <span className="sub_featured">Compared to the last month</span>
         </div>
         <div className="featured_item">
-            <span className="featured_title">Revanu</span>
+            <span className="featured_title">Active Users</span>
             <div className="FeaturedMoneyContainer">
-                <span className="featureMoney">Rs. 1200</span>
-                <span className="featureMoneyRate">-10
-                <FontAwesomeIcon className='featured_icon negative' icon="fa-solid fa-arrow-down" />
-                </span>
+                <span className="featureMoney">8920</span>
+                <FontAwesomeIcon className='featured_icon' icon="fa-solid fa-user-check" />
             </div>
-            <span className="sub_featured">Compared to the last month</span>
+           
         </div>
         <div className="featured_item">
-            <span className="featured_title">Cost</span>
+            <span className="featured_title">Inactive Users</span>
             <div className="FeaturedMoneyContainer">
-                <span className="featureMoney">Rs. 22500</span>
-                <span className="featureMoneyRate">-1120
-                <FontAwesomeIcon className='featured_icon negative' icon="fa-solid fa-arrow-down" />
-                </span>
+                <span className="featureMoney">3540</span>
+                <FontAwesomeIcon className='featured_icon' icon="fa-solid fa-user-slash" />
             </div>
-            <span className="sub_featured">Compared to the last month</span>
+           
         </div>
     </div>
   )

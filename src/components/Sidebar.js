@@ -11,16 +11,15 @@ export default function Sidebar() {
                     <ul className="sidebarList">
                         <li className="sidebarItem active">
                             <FontAwesomeIcon className='sidebar_icon' icon="fa-solid fa-house" />
-                            Home
+                          <a href="/">Home</a>
+                        </li>
+                        <li className="sidebarItem">
+                            <FontAwesomeIcon className='sidebar_icon' icon="fa-solid fa-list-alt" />
+                          <a href="/users">User List</a>
                         </li>
                         <li className="sidebarItem">
                         <FontAwesomeIcon className='sidebar_icon' icon="fa-solid fa-arrow-trend-up" />
                             Analytics
-                        </li>
-                  
-                        <li className="sidebarItem">
-                            <FontAwesomeIcon className='sidebar_icon' icon="fa-solid fa-list-alt" />
-                            User Table
                         </li>
                     </ul>
                 </div>
